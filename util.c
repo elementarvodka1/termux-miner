@@ -2438,9 +2438,6 @@ void print_hash_tests(void)
 	qubithash(&hash[0], &buf[0]);
 	printpfx("qubit", hash);
 
-	rf256_hash(&hash[0], &buf[0], 80);
-	printpfx("rainforest", hash);
-
 	scrypthash(&hash[0], &buf[0], 1024);
 	printpfx("scrypt", hash);
 
