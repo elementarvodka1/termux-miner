@@ -2381,9 +2381,6 @@ static void *miner_thread(void *userdata)
 		case ALGO_QUBIT:
 			rc = scanhash_qubit(thr_id, &work, max_nonce, &hashes_done);
 			break;
-		case ALGO_RAINFOREST:
-			rc = scanhash_rf256(thr_id, &work, max_nonce, &hashes_done);
-			break;
 		case ALGO_SCRYPT:
 			rc = scanhash_scrypt(thr_id, &work, max_nonce, &hashes_done, scratchbuf, opt_scrypt_n);
 			break;
